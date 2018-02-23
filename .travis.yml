@@ -3,5 +3,5 @@ jdk:
  -oraclejdk9
  -oraclejdk8
 
-script:
-- bash <(curl -s https://codecov.io/bash)
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
